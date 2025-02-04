@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacques+Francois+Shadow&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Playwrite+IN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sofadi+One&display=swap');
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+  }
+  
+  /* Preferred box-sizing value */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* For images to not be able to exceed their container */
+  img {
+    max-width: 100%;
+  }
+  
+  /* Removes spacing between cells in tables */
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Revert the 'white-space' property for textarea elements on Safari */
+  textarea {
+    white-space: revert;
+  }
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* remove scroll bars */
+/* Target the scrollbar track */
+::-webkit-scrollbar {
+  width: 0px; /* Set width to 0 to hide */
+}
+
+/* Target the scrollbar thumb (even though it's hidden, good practice) */
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make thumb transparent */
+}
+
+/* Optional: Style the scrollbar track (not really needed if hidden) */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Make track transparent */
+}
+
+/* For Firefox (more limited - can only control width) */
+* {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* You might need to add this to the body or a specific container */
+body { /* Or a container element like .main-content, etc. */
+    overflow-y: auto; /* Ensure scrolling is still enabled */
+    -ms-overflow-style: none;  /* IE and Edge (old versions) */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* If you have a specific div with scrolling, target that instead of body */
+.scrollable-div {
+    overflow-y: auto; /* Ensure scrolling is still enabled */
+    -ms-overflow-style: none;  /* IE and Edge (old versions) */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+
+.clearfix{
+   background-color: black;
+}
+.nav{
+    background-color: rgb(143 31 163);
+    height: 56px;
+    position: sticky;
+    top: 0px;
+ }
+ .one{
+    display: inline;
+ }
+ .nav-in{
+     color: white;
+     font-size: 34px;
+     padding: 12px;
+     cursor: pointer;
+ }
+ .nav-in:hover
+ {
+     background-color: rgb(193, 164, 219);
+ }
+ .theme{
+     padding: 20px;
+     font-family: "Jacques Francois Shadow", serif;
+     font-size: 32px;
+     font-weight: 400;
+     font-style: normal;
+     color: rgb(189, 207, 85);
+ }
+.trailers{
+    border: 5px solid white;
+}
+video {
+  width: 98vw;
+  height: 75vh;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    background-blend-mode: saturation;
+    
+}
+.title-1,.title-2,.title-3,.title-4{
+    font-size: 39px;
+    width: 327px;
+    height: 54px;
+    border-top-right-radius: 80px;
+    padding: 4px;
+    margin-top: 47px;
+    margin-bottom: 20px;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(143 31 163);
+}
+.scroll-menu {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  background-color: rgb(143 31 163);
+}
+.scroll-menu img {
+    width: 163px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+img:hover{
+  transform: translateY(20px);
+  cursor: pointer;
+}
