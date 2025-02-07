@@ -128,20 +128,3 @@
 .link:hover{
     color: rgb(138, 147, 155);
 }
-.para
-{
-    color: white;  
-    background-color: black;
-    position: absolute;
-    top: 179px;
-}
-.wel{
-  display: inline;
-  color:  rgb(143 31 163);
-  font-size: 90px;
-}
-.dis{
-  display: inline;
-  font-size: 33px;
-  font-weight: 300;
-}
